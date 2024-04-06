@@ -4,7 +4,7 @@ const dynamicCacheName = 'd-app-v3'
 const assetUrls = [
   'index.html',
   '/js/app.js',
-  '/css/styles.css',
+  '/style.css',
   'offline.html'
 ]
 
