@@ -176,7 +176,7 @@ body.dark-mode header {
   padding: 20px 0;
   font-size: 30px;
 }
-.item1 {
+#item1 {
   grid-row-start: 1;
   grid-row-end: 3;
 }
