@@ -2,149 +2,159 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Planimetriya | Train your brain with our quizes!</title>
-  <!-- Stylesheets -->
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planimetriya | Train your brain with our quizes!</title>
+    <!-- Stylesheets -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <div class="container">
-    <!-- Header Section -->
-    <header>
-      <div class="container">
-        <div class="header-content">
-          <a href="#" class="logo">
-            VM<span class="highlight">Quiz</span></a>
-          <button class="switch-mode">
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-moon"></i>
-              <div class="ball"></div>
-            </label>
-          </button>
-        </div>
-      </div>
-    </header>
-
-    <!-- Banner Section -->
-    <section class="banner">
-      <div class="banner-left">
-        <h2 class="banner-title">
-          <span class="highlight">Victorinalarda qatnashing</span> va
-          bilimingizni yanada mustahkamlang!
-        </h2>
-        <p class="banner-description">
-          Victorinalar asosan planimetrik shakillar formulalari asosida bo'ladi va SIZ HOZIR BOSHLANG👇
-        </p>
-        <button id="condition-modal-btn">
-
-          <span> <i class="fa-solid fa-arrow-right-long"></i> </span>
-        </button>
-      </div>
-      <div class="banner-right">
-        <img src="images/banner.svg" alt="banner image" class="floating" />
-      </div>
-    </section>
-
-    <!-- Modal Condition Section -->
-    <section class="quiz-modal-container">
-      <div class="quiz-modal-condition glass">
-        <h2 class="modal-title">Test ishlashdagi bazi qoidalar</h2>
-        <div class="modal-conditions">
-          <p>
-            1. Sida har bir savol uchun
-            <span class="highlight">10 sekund</span> bor.
-          </p>
-          <p>2. Javob tanlaganingizdan keyin o'zgartira olmaysiz!</p>
-          <p>3. Vaqt tugashi bilan hech qanday javob tanlay olmaysiz!</p>
-          <p>4. Har bir to'g'ri javob uchun ball olasiz</p>
-        </div>
-        <div class="condition-actions">
-          <button class="exit-modal btn">Chiqish</button>
-          <button class="start-quiz btn">Davom etish</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Question Section -->
-    <section class="question-section">
-      <div class="question-container glass">
-        <div class="question-header">
-          <div class="time-container">
-            <div class="time">
-              <span class="time-count"> 10</span> sekund qoldi
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <a href="#" class="logo">
+                        VM<span class="highlight">Quiz</span></a>
+                    <button class="switch-mode">
+                        <input type="checkbox" class="checkbox" id="chk" />
+                        <label class="label" for="chk">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                            <div class="ball"></div>
+                        </label>
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="user-score">
-            <p><span class="score"> 10</span> ball</p>
-          </div>
-        </div>
-        <div class="timeline"></div>
-        <div class="question-center">
-          <h2 class="question-text"></h2>
-          <div class="question-options"></div>
-          <div class="answer-description"></div>
-        </div>
+        </header>
 
-        <div class="question-footer">
-          <div class="question-left">
-            <div class="question-progress-container">
-              <div class="question-progress"></div>
+        <!-- Banner Section -->
+        <section class="banner">
+            <div class="banner-left">
+                <h2 class="banner-title">
+                    <span class="highlight">Viktorinalarda qatnashing</span> va
+                    bilimingizni yanada mustahkamlang!
+                </h2>
+                <p class="banner-description">
+                    Viktorinalar asosan planimetrik shakllar formulalari asosida bo'ladi va SIZ HOZIR BOSHLANG👇
+                </p>
+                <div class="grid-container">
+                    <button id="item1 condition-modal-btn">
+                        Uchburchak
+                        <span> <i class="fa-solid fa-arrow-right-long"></i> </span>
+                    </button>
+                    <button id="item2 condition-modal-btn">
+                        To'rtburchak
+                        <span> <i class="fa-solid fa-arrow-right-long"></i> </span>
+                    </button>
+                    <button id="item3 condition-modal-btn">
+                        Ko'pburchak
+                        <span> <i class="fa-solid fa-arrow-right-long"></i> </span>
+                    </button>
+                </div>
             </div>
-            <div class="question-progress-text"></div>
-          </div>
-          <div class="question-action">
-            <button class="next-question btn">Keyingi savol</button>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div class="banner-right">
+                <img src="images/banner.svg" alt="banner image" class="floating" />
+            </div>
+        </section>
 
-    <!-- Result Section -->
-    <section class="result-section">
-      <div class="result-box glass">
-        <h2 class="result-expression">Tabriklaymiz!!!!</h2>
-        <p class="result-text">Sizning balingiz 60</p>
-        <p class="result-feedback">
-          <span class="feedback"></span>
-        </p>
-        <div class="result-actions">
-          <button class="restart btn">Boshidan boshlash</button>
-          <button class="back-to-home btn">Bosh sahifaga qaytish</button>
-        </div>
-      </div>
-    </section>
+        <!-- Modal Condition Section -->
+        <section class="quiz-modal-container">
+            <div class="quiz-modal-condition glass">
+                <h2 class="modal-title">Test ishlashdagi bazi qoidalar</h2>
+                <div class="modal-conditions">
+                    <p>
+                        1. Sida har bir savol uchun
+                        <span class="highlight">10 sekund</span> bor.
+                    </p>
+                    <p>2. Javob tanlaganingizdan keyin o'zgartira olmaysiz!</p>
+                    <p>3. Vaqt tugashi bilan hech qanday javob tanlay olmaysiz!</p>
+                    <p>4. Har bir to'g'ri javob uchun ball olasiz</p>
+                </div>
+                <div class="condition-actions">
+                    <button class="exit-modal btn">Chiqish</button>
+                    <button class="start-quiz btn">Davom etish</button>
+                </div>
+            </div>
+        </section>
 
-    <!-- Canvas || Confetti -->
-    <canvas id="my-canvas"></canvas>
+        <!-- Question Section -->
+        <section class="question-section">
+            <div class="question-container glass">
+                <div class="question-header">
+                    <div class="time-container">
+                        <div class="time">
+                            <span class="time-count"> 10</span> sekund qoldi
+                        </div>
+                    </div>
+                    <div class="user-score">
+                        <p><span class="score"> 10</span> ball</p>
+                    </div>
+                </div>
+                <div class="timeline"></div>
+                <div class="question-center">
+                    <h2 class="question-text"></h2>
+                    <div class="question-options"></div>
+                    <div class="answer-description"></div>
+                </div>
 
-    <!-- loading section -->
-    <section class="loading-container">
-      <h2 class="loading-text">yuklanmoqda(sabr qiling)...</h2>
-      <div class="loading-line-box">
-        <div class="line"></div>
-      </div>
-    </section>
+                <div class="question-footer">
+                    <div class="question-left">
+                        <div class="question-progress-container">
+                            <div class="question-progress"></div>
+                        </div>
+                        <div class="question-progress-text"></div>
+                    </div>
+                    <div class="question-action">
+                        <button class="next-question btn">Keyingi savol</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Container end -->
-  </div>
+        <!-- Result Section -->
+        <section class="result-section">
+            <div class="result-box glass">
+                <h2 class="result-expression">Tabriklaymiz!!!!</h2>
+                <p class="result-text">Sizning balingiz 60</p>
+                <p class="result-feedback">
+                    <span class="feedback"></span>
+                </p>
+                <div class="result-actions">
+                    <button class="restart btn">Boshidan boshlash</button>
+                    <button class="back-to-home btn">Bosh sahifaga qaytish</button>
+                </div>
+            </div>
+        </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <p class="copyright">Copyright &copy;2024 Reserved by affapp</p>
-  </footer>
+        <!-- Canvas || Confetti -->
+        <canvas id="my-canvas"></canvas>
 
-  <!-- JS Files -->
-  <script src="./js/confetti.min.js"></script>
-  <script src="./js/quiz.js"></script>
-  <script src="./js/app.js"></script>
-  <script src="/sw.js"></script>
-  <script src="https://kit.fontawesome.com/8184740b0e.js" crossorigin="anonymous"></script>
+        <!-- loading section -->
+        <section class="loading-container">
+            <h2 class="loading-text">yuklanmoqda(sabr qiling)...</h2>
+            <div class="loading-line-box">
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- Container end -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p class="copyright">Copyright &copy;2024 Reserved by affapp</p>
+    </footer>
+
+    <!-- JS Files -->
+    <script src="./js/confetti.min.js"></script>
+    <script src="./js/quiz.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="/sw.js"></script>
+    <script src="https://kit.fontawesome.com/8184740b0e.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
