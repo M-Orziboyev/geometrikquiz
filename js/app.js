@@ -212,9 +212,9 @@ const timer = () => {
 const nextQuizBtnChange = () => {
   nextQuiz.style.display = "block";
   if (questionIndex === quizArr.length - 1) {
-    nextQuiz.textContent = "Show Result";
+    nextQuiz.textContent = "Natijani ko'rish";
   } else {
-    nextQuiz.textContent = "Next Question";
+    nextQuiz.textContent = "Keyingisi";
   }
 };
 
@@ -223,7 +223,7 @@ const showResult = () => {
   resultSection.classList.add("active");
   canvas.style.display = "block";
 
-  resultText.textContent = `You scored ${userScore} points`;
+  resultText.textContent = `Sizning ballingiz: ${userScore} `;
 
   scoreFeedback(userScore);
 };
@@ -235,17 +235,17 @@ const scoreFeedback = (userScore) => {
   // the result will show according to the score
   if (userScore >= 80 && userScore <= 100) {
     confettiStart();
-    resultFeedback.textContent = `You are an expert in JavaScript, well done on your outstanding performance. Keep up the good work and continue to showcase your skills.`;
+    resultFeedback.textContent = `Yaxshi ishlashda davom eting va o'z mahoratingizni namoyish etishda davom eting.`;
   } else if (userScore >= 60 && userScore < 80) {
     confettiStart();
-    resultFeedback.textContent = `You have a solid understanding of JavaScript, keep working to improve your skills and understanding. Your performance is good, but with additional practice and focus, you can excel in this subject. `;
+    resultFeedback.textContent = `Siz geometriyani yaxshi tushunasiz, o'z mahoratingiz va tushunchangizni yaxshilash uchun ishlashda davom eting. Sizning ishlashingiz yaxshi, lekin qo'shimcha mashg'ulot va diqqat bilan siz ushbu mavzuda muvaffaqiyat qozonishingiz mumkin. `;
   } else if (userScore >= 40 && userScore < 60) {
     confettiStart();
-    resultFeedback.textContent = `You have a fair understanding of JavaScript, but there is room for improvement. It's important to continue practicing and reviewing the material to solidify your understanding and skills. I suggest seeking additional resources and assistance to help you improve in this subject.`;
+    resultFeedback.textContent = `Siz geometriyani adolatli tushunasiz, lekin yaxshilash uchun joy bor. Tushunish va ko'nikmalaringizni mustahkamlash uchun mashq qilish va materialni ko'rib chiqishni davom ettirish muhimdir. Men ushbu mavzuni yaxshilashga yordam beradigan qo'shimcha manbalar va yordam izlashni taklif qilaman.`;
   } else {
     confetti.clear();
-    resultExpression.textContent = `Needs Improvement!!!`;
-    resultFeedback.textContent = `The result of this quiz is not satisfactory, it's clear that you have a limited understanding of JavaScript. It's important to put in extra effort and seek assistance to improve your understanding and skills in this subject. I suggest reviewing the material and practicing regularly in order to improve your performance.`;
+    resultExpression.textContent = `Yaxshilash kerak!!!`;
+    resultFeedback.textContent = `Bu viktorina natijasi qoniqarli emas, siz Geometriya bo'yicha cheklangan tushunchaga ega ekanligingiz aniq. Ushbu mavzu bo'yicha tushuncha va ko'nikmalaringizni yaxshilash uchun qo'shimcha kuch sarflash va yordam so'rash muhimdir. Ishingizni yaxshilash uchun materialni ko'rib chiqishni va muntazam ravishda mashq qilishni taklif qilaman.`;
   }
 };
 
