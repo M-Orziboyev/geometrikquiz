@@ -181,6 +181,9 @@ body.dark-mode header {
   grid-row-end: 3;
 }
 
+
+
+
 .label {
   background-color: var(--main-black);
   border-radius: 80px;
