@@ -1,7 +1,7 @@
 const quizArr = [
   {
     id: 1,
-    question: "",
+    question: "What muslima eanei",
     options: {
       A: "",
       B: "",
@@ -12,7 +12,7 @@ const quizArr = [
   },
   {
     id: 2,
-    question: "",
+    question: "What mushta",
     options: {
       A: "",
       B: "",
@@ -23,7 +23,7 @@ const quizArr = [
   },
   {
     id: 3,
-    question: "",
+    question: "what feel Muslima",
     options: {
       A: "",
       B: "",
@@ -31,5 +31,5 @@ const quizArr = [
       D: "",
     },
     answer: "A",
-  }
+  },
 ];
