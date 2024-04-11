@@ -29,7 +29,7 @@ const loadingContainer = document.querySelector(".loading-container");
 let questionIndex = 0;
 let timeCount;
 let userScore = 0;
-let counter; 
+let counter;
 let timelineCounter;
 
 const tick = document.createElement("div");
@@ -207,7 +207,6 @@ const timer = () => {
     }
   }, 1000);
 };
-
 
 const nextQuizBtnChange = () => {
   nextQuiz.style.display = "block";
